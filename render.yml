@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: noc-webhook
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: WEBHOOK_SECRET
+        value: MyNocSecret123
